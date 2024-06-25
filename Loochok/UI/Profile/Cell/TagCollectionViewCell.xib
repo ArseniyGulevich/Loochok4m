@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCollectionViewCell" customModule="Loochok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMz-dn-Oxg">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8u-bj-pAm">
+                                <rect key="frame" x="16" y="8" width="38" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" name="c0_FFFFFFF"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="c0_000000"/>
+                        <constraints>
+                            <constraint firstItem="m8u-bj-pAm" firstAttribute="leading" secondItem="CMz-dn-Oxg" secondAttribute="leading" constant="16" id="Leq-5r-eRl"/>
+                            <constraint firstItem="m8u-bj-pAm" firstAttribute="centerY" secondItem="CMz-dn-Oxg" secondAttribute="centerY" id="Tgo-YI-4wX"/>
+                            <constraint firstAttribute="trailing" secondItem="m8u-bj-pAm" secondAttribute="trailing" constant="16" id="av8-sS-4nh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CMz-dn-Oxg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fjV-jf-hti"/>
+                <constraint firstAttribute="trailing" secondItem="CMz-dn-Oxg" secondAttribute="trailing" id="foA-QK-0uq"/>
+                <constraint firstAttribute="bottom" secondItem="CMz-dn-Oxg" secondAttribute="bottom" id="t61-UH-8zW"/>
+                <constraint firstItem="CMz-dn-Oxg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wfw-4J-ymH"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="CMz-dn-Oxg" id="30l-p1-chx"/>
+                <outlet property="nameLabel" destination="m8u-bj-pAm" id="N8p-Kk-uHl"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="c0_000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="c0_FFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

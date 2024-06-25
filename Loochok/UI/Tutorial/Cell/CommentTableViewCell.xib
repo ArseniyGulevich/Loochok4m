@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SuisseIntl-Regular.otf">
+            <string>SuisseIntl-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="Loochok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-cD-mgZ">
+                        <rect key="frame" x="0.0" y="4" width="320" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PyW-Ff-rYs">
+                                <rect key="frame" x="0.0" y="7.6666666666666643" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="t7J-bF-Wy3"/>
+                                    <constraint firstAttribute="width" constant="46" id="v7m-f1-nop"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-1k-ONm">
+                                <rect key="frame" x="54" y="4.6666666666666643" width="266" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@chiveskella" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOr-tq-5rk">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="16"/>
+                                        <fontDescription key="fontDescription" name="SuisseIntl-Regular" family="Suisse Intl" pointSize="14"/>
+                                        <color key="textColor" name="t1_2C2D2E"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Круто вышло" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-Gu-CZO">
+                                        <rect key="frame" x="0.0" y="16" width="266" height="16"/>
+                                        <fontDescription key="fontDescription" name="SuisseIntl-Regular" family="Suisse Intl" pointSize="14"/>
+                                        <color key="textColor" name="t3_828283"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wQq-MJ-tP3">
+                                        <rect key="frame" x="0.0" y="32" width="266" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.08.2023" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQK-rm-yET">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.333333333333329" height="20"/>
+                                                <fontDescription key="fontDescription" name="SuisseIntl-Regular" family="Suisse Intl" pointSize="14"/>
+                                                <color key="textColor" name="t3_828283"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-zm-Cgf">
+                                                <rect key="frame" x="79.333333333333357" y="0.0" width="128.66666666666663" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Ответить">
+                                                    <color key="titleColor" name="t3_828283"/>
+                                                </state>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kae-qQ-93y" userLabel="sepView">
+                                                <rect key="frame" x="216" y="0.0" width="50" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="daz-31-1Yr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95B-sw-sb7" userLabel="sepView">
+                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                        <color key="backgroundColor" name="bg2_D7D7D7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5Kn-Li-Nkv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="P7o-cD-mgZ" secondAttribute="trailing" id="5Ro-6n-Ni1"/>
+                    <constraint firstItem="P7o-cD-mgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="5ms-Jx-viR"/>
+                    <constraint firstAttribute="trailing" secondItem="95B-sw-sb7" secondAttribute="trailing" id="JTX-NW-YgJ"/>
+                    <constraint firstItem="P7o-cD-mgZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kfG-0u-rLU"/>
+                    <constraint firstAttribute="bottom" secondItem="95B-sw-sb7" secondAttribute="bottom" constant="10" id="nmt-cj-fOu"/>
+                    <constraint firstItem="95B-sw-sb7" firstAttribute="top" secondItem="P7o-cD-mgZ" secondAttribute="bottom" constant="8" id="xNK-xt-q7u"/>
+                    <constraint firstItem="95B-sw-sb7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yVD-Qq-rIB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="commentLabel" destination="lx7-Gu-CZO" id="E3r-aw-2Ug"/>
+                <outlet property="dateLabel" destination="HQK-rm-yET" id="jQP-GM-uoh"/>
+                <outlet property="nickLabel" destination="BOr-tq-5rk" id="gvE-gb-LCr"/>
+                <outlet property="photoImageView" destination="PyW-Ff-rYs" id="0SN-ck-8Ub"/>
+            </connections>
+            <point key="canvasLocation" x="51.908396946564885" y="17.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bg2_D7D7D7">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="t1_2C2D2E">
+            <color red="0.17254901960784313" green="0.17647058823529413" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="t3_828283">
+            <color red="0.50980392156862742" green="0.50980392156862742" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
